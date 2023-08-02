@@ -8,6 +8,31 @@
     font-family: 'Oswald', sans-serif;
 }
 
+.container
+{
+    width: 600px;
+    height: 500px;
+    position: relative;
+    top: 50%;
+    left: 25%;;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container h1
+{
+    font-size: 50px;
+    font-weight: 160;
+    text-align: center;
+}
+
+span{
+    color: #00da7f;
+}
+
 body
 {
     display: flex;
