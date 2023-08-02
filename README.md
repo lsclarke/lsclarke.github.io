@@ -1,3 +1,4 @@
-# lsclarke.github.io
+# Lenard Clarke
+# Game Developer and Game Designer
 
 
