@@ -1,14 +1,121 @@
-*
+@import url('https://fonts.googleapis.com/css?family=Oswald:700,900');
+
+* 
 {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
 }
 
-body{
+body
+{
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: black;
+    background: #3f3f3f;
+
+    animation: animate 4s linear infinite;
+}
+
+@keyframes animate {
+    0%{
+        background: #3f3f3f;
+
+    }
+
+    50%{
+        background: #272727;
+
+    }
+
+    100%{
+        background: #3f3f3f;
+
+    }
+}
+
+ul{
+    position: relative;
+    left: -25%;
+    transform: skewY(-15deg);
+}
+
+
+ul li
+{
+    position: relative;
+    list-style: none;
+    width: 300px;
+    background: #3e3f46;
+    padding: 20px ;
+    z-index: var(--i);
+}
+
+ul li::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 40px;
+    height: 65px;
+    background: #35363b;
+
+    transform-origin: right;
+    transform: skewY(45deg);
+}
+
+ul li:hover::before
+{
+    background: #03a15f;
+}
+
+ul li::after
+{
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 300px;
+    height: 40px;
+    background: #585961;
+
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    transition: 0.5s;
+}
+
+ul li:hover::after
+{
+    background: #25ffa4;
+}
+
+ul li a
+{
+    text-decoration: none;
+    color: #999;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+
+ul :hover
+{
+ background: #00da7f;
+ transform: translateX(25px);
+}
+
+ul li :hover 
+{
+ color: #ffffff;
+ transform: translateX(0px);
+
+}
+
+ul li:last-child::after
+{
+    box-shadow: -120px 120px 20px rgb(0,0,0,0.25);
 }
