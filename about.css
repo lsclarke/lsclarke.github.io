@@ -17,6 +17,7 @@ body
     background: #3f3f3f;
 
     animation: animate 4s linear infinite;
+    
 }
 
 @keyframes animate {
