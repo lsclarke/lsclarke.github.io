@@ -6,8 +6,17 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Oswald', sans-serif;
+    
 }
 
+@keyframes fadeIn {
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
 .container
 {
     width: 600px;
@@ -27,6 +36,8 @@
     font-size: 50px;
     font-weight: 160;
     text-align: center;
+
+    text-shadow: 0 0 3px #00ff73, 0 0 5px #006eff;
 }
 
 span{
@@ -42,6 +53,7 @@ body
     background: #3f3f3f;
 
     animation: animate 4s linear infinite;
+    animation: fadeIn 2s linear;
 }
 
 @keyframes animate {
@@ -65,6 +77,12 @@ ul{
     position: relative;
     left: -25%;
     transform: skewY(-15deg);
+
+    animation: UpDown 2s linear infinite;
+}
+
+@keyframes identifier {
+    
 }
 
 
