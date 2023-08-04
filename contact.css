@@ -19,7 +19,7 @@
 }
 .container
 {
-    width: 600px;
+    width: 800px;
     height: 500px;
     position: relative;
     top: 50%;
@@ -75,7 +75,7 @@ body
 
 ul{
     position: relative;
-    left: -25%;
+    left: -35%;
     transform: skewY(-15deg);
 
     animation: UpDown 2s linear infinite;
@@ -171,6 +171,10 @@ ul li:last-child::after
     margin: 0;
 }
 
+.ImagesBody h1{
+color: white;
+}
+
 #imageButtons{
     position: absolute;
     top: 70%;
@@ -184,6 +188,10 @@ ul li:last-child::after
     list-style: none;
 }
 
+span{
+    color: #00da7f;
+}
+
 #imageButtons li{
     display: inline-block;
 
@@ -192,35 +200,24 @@ ul li:last-child::after
     position: relative;
 }
 
-.githubImage{
+.GmailImage{
     width: 75px;
     height: 75px;
     box-shadow: 0px 0px 25px #161616;
-    border-radius: 40px;
+    border-radius: 0px;
 }
-
-
-.itchioImage{
-    width: 75px;
-    height: 75px;
-    box-shadow: 0px 0px 25px #161616;
-    border-radius: 40px;
-}
-
 
 .linkedInImage{
     width: 75px;
     height: 75px;
     box-shadow: 0px 0px 25px #161616;
-    border-radius: 15px;
-    
+    border-radius: 0px;
 }
 
-.SketchfabInImage{
+.githubImage{
     width: 75px;
     height: 75px;
     box-shadow: 0px 0px 25px #161616;
     border-radius: 40px;
-    
 }
 
