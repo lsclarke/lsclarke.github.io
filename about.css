@@ -40,9 +40,9 @@ body
 .resume
 {
     
-    position: absolute;
-        top: 72%;
-        left: 60%;
+        position: absolute;
+        top: 80%;
+        left: 74%;
         z-index: 10;
         animation: fadeIn 4s linear;
         text-shadow: 0 0 3px #00ff73, 0 0 5px #006eff;
@@ -214,6 +214,8 @@ ul li:last-child::after
     display: flex;
     align-items: center;
     justify-content: center;
+
+    padding: 50px;
 
     font-size: 24pt;
     font-weight: 0;
